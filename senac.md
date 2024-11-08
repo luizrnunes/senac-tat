@@ -1,3 +1,3 @@
-Criando o primeiro arquivo no GitHub
+Criando o primeiro arquivo no Github
 
 Editando um arquivo no Github
