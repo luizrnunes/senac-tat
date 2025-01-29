@@ -1,0 +1,22 @@
+1  poweroff
+    2  sudo
+    3  sudo apt update 
+    4  sudo apt upgrade
+    5  sudo apt autoremove
+    6  sudo apt autoclean 
+    7  sudo reboot
+    8  curl -fsS https://dl.brave.com/install.sh | sh
+    9  sudo apt install chromium
+   10  sudo apt install linux-oem-24.04b
+   11  sudo reboot
+   12  sudo apt update 
+   13  sudo apt install git vim
+   14  sudo apt install KolourPaint NotepadQQ VLC Audacity Kazam
+   15  sudo apt install kolourpaint notepadqq vlc audacity kazam
+   16  git
+   17  git config --global user.name "Luiz Henrique"
+   24  git clone https://github.com/luizrnunes/senac-tat
+   25  exit
+   26  git config --list
+   27  exit
+   28  history
