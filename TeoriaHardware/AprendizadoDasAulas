@@ -1,0 +1,8 @@
+Na aula do Leandro Ramos aprendemos várias coisas sobre Teoria de Hardware, que em resumo significa:
+
+A teoria de hardware estuda os princípios e componentes físicos de sistemas computacionais, como circuitos eletrônicos, processadores, memória e dispositivos de armazenamento. Foca na arquitetura de computadores, lógica digital, circuitos integrados e design de chips, além de otimizar desempenho, velocidade, consumo de energia e custo. Esses fundamentos são essenciais para o desenvolvimento de tecnologias como microprocessadores e dispositivos como smartphones e servidores.
+
+Uma breve explicação para cada componente:
+
+A placa mãe conecta e distribui energia entre todos os componentes do computador, como processador, memória e armazenamento. O processador (CPU) é responsável por executar instruções e processar dados, com múltiplos núcleos para melhorar o desempenho. A placa de vídeo (GPU) gera as imagens exibidas no monitor, essencial para gráficos complexos. O SSD é um dispositivo de armazenamento rápido, superior ao HD, que usa discos magnéticos e é mais lento. A fonte de alimentação fornece a energia necessária para o funcionamento do sistema. AMD e Intel são as principais fabricantes de processadores, com a Intel focando em desempenho e a AMD oferecendo boas opções com múltiplos núcleos e custo-benefício.
+Esses componentes formam a base do computador, sendo escolhidos conforme o desempenho e o custo desejados.
