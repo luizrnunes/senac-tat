@@ -1,0 +1,6 @@
+Hostname....: hostname
+IPv4 Address: ipconfig
+MAC Address.: getmac
+--------------------------
+ping 192.168.1.1
+ping 192.168.1.254
