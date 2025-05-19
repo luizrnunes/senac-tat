@@ -1,0 +1,30 @@
+!Configurar o SSH
+enable
+    configures terminal 
+    !Configurar o Domínio 
+    ip domain-name senac.br 
+    !Habilitar o SSH
+    crypto key generate rsa general-keys modulus 1024
+    !Habilitar a versão 2
+    ip ssh version 2
+    !Tempo de conexão 
+    ip ssh time-out 60
+    !Configurar Número de sessão 
+    ip ssh authentication-retries 2
+    !Sair
+    end
+!Salvar 
+write
+=======================================================================
+show running-config
+show running-config | section include line vty 
+show running-config | include ip ssh 
+show running-config | section include interface Vlan1
+show ip ssh
+show crypto key mypubkey rsa
+show ssh 
+show users 
+=======================================================================
+ping 192.168.1.250 - 192.168.1.251 
+telnet 192.168.1.250 - 192.168.1.251
+ssh -l senac 192.168.1.250 - 192.168.1.251

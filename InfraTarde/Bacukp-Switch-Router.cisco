@@ -1,0 +1,24 @@
+enable
+    !Versão do Cisco IOS
+    show version 
+    !Versão do Sistema Operacional
+    show boot 
+    !Conteúdo da flash:
+    show flash:/
+    !Conteúdo da NVRAM
+    dir nvram:/
+    !==================================================
+    !Começando os Backup do Switch
+    !Memória RAM para NVRAM
+    copy running-config startup-config 
+    !Memória RAM para FLASH 
+    copy running-config flash:/
+    show flash:/
+    !Memória NVRAM para TFTP
+    copy startup-config tftp:
+    !Memória FLASH para TFTP
+    copy flash: tftp:
+    !Memória RAM para TEXTO
+    show running-config 
+    !Sair
+    end
