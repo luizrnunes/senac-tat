@@ -44,3 +44,63 @@ enable
             end
 write 
 show running-config 
+-------------------------------------------------------
+!Configuração da VLAN da rede sem fio
+enable 
+    configure terminal
+        interface range GigabitEthernet 1/0/20 - 23
+            description Vlan 60 dos access point 
+            switchport mode access
+            switchport nonegotiate
+            switchport access vlan 60 
+            end
+write 
+--------------------------------------------------------
+!Configuração da VLAN da rede sem fio 
+enable
+    configure terminal
+        interface range GigabitEthernet 1/0/5 - 9, GigabitEthernet 1/0/14 - 19, GigabitEthernet 1/0/21 - 23, GigabitEthernet 1/1/1 - 4
+        description  Interface Desligadas
+        shutdown
+        end
+write
+show running-config  
+show ip interface brief 
+-------------------------------------------------------
+!Configuração do Switch 2960 (LADO ESQUERDO)
+enable
+    configure terminal 
+        interface range fastEthernet 0/1 - 4
+            description VLAN 10 Financeiro
+            switchport mode access 
+            switchport nonegotiate
+            switchport access vlan 10 
+            exit
+        interface range fastEthernet 0/5 - 9
+            description VLAN 20 Estoque 
+            switchport mode access
+            switchport nonegotiate
+            switchport access vlan 20
+            exit
+        interface range fastEthernet 0/10 - 14
+            description VLAN 30 Faturamento 
+            switchport mode access
+            switchport nonegotiate
+            switchport access vlan 30
+            exit
+        interface range fastEthernet 0/15 - 20
+            description VLAN 40 Gerencia 
+            switchport mode access
+            switchport nonegotiate
+            switchport access vlan 40
+            exit
+        interface range fastEthernet 0/2 - 4, fastEthernet 0/6 - 9, fastEthernet 0/11 - 14, fastEthernet 0/16 - 22
+            description Interface Desligadas    
+            shutdown
+            end 
+write
+show running-config
+show ip interface brief
+show vlan brief
+show vlan id 10
+show vlan name FIN 
