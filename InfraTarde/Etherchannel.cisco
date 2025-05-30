@@ -1,0 +1,27 @@
+!Configuração Etherchannel Switch 3650
+enable
+    configure terminal
+        interface range GigabitEthernet 1/0/1 - 2
+            channel-group 1 mode active 
+            exit
+        interface Port-Channel 1
+            Switchport
+            Switchport mode trunk 
+            spanning-tree portfast trunk 
+            no shutdown
+            end
+write
+----------------------------------------------------------
+enable
+    configure terminal
+        interface range GigabitEthernet 1/0/3 - 4
+            channel-group 2 mode active 
+            exit
+        interface Port-Channel 2
+            Switchport
+            Switchport mode trunk 
+            spanning-tree portfast trunk 
+            no shutdown
+            end
+write
+----------------------------------------------------------

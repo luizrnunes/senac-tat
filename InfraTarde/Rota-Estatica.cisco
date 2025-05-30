@@ -8,7 +8,7 @@ enable
             no shutdown
             end
 write
-------------------------------------------------------------
+-----------------------------------------------------------
 !Configuração da Interface de Wan do Router 1941
 enable
     configure terminal
@@ -22,4 +22,21 @@ write
 !Configuração da Rota Estática do Router 1941
 enable
     configure terminal
-        
+        ip route 0.0.0.0 0.0.0.0 10.0.0.2
+        end
+write
+------------------------------------------------------------
+!Configuração do Switch Multilayer 3650
+enable  
+    conf terminal
+        ip route 0.0.0.0 0.0.0.0 172.16.0.30
+        end
+write
+------------------------------------------------------------
+!Configuração do Router 4321
+enable
+    conf terminal
+        ip route  0.0.0.0 0.0.0.0 172.16.0.29
+        ip route  192.168.1.0 255.255.255.0 10.0.0.1
+        end
+write
